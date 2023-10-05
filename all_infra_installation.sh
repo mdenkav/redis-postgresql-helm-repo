@@ -12,6 +12,11 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 chmod 700 get_helm.sh
 ./get_helm.sh
 
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+systemctl start docker & systemctl enable docker
+docker ps
+
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
@@ -51,4 +56,4 @@ helm ls
 #helm install deniz-redis redis
 
 #veya helm reposu sadece helm chartlardan oluşuyorsa tek adımda kurulum yapılabilir.
-#helm install deniz-deployment deniztest.git
+#helm install deniz-deployment deniztest
