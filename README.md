@@ -1,4 +1,4 @@
-# deniztest isimli, deployment amaçlı git reposudur.
+# deployment amaçlı git reposudur.
 Kurulum git paketi Redis ve Postgresql Helm Chart dosyaları, altyapı gereksinimlerini uçtan uca kuracak .sh dosyası ve açıklamanın olduğu README dosyasından oluşmaktadır.
 
 Ubuntu sunucularda hazır olarak çalıştırılabilir.
